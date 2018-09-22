@@ -7,7 +7,7 @@ import random
 import numpy as np
 class Agent():
 
-    def __init__(self, state_size, num_actions, lr=0.01, buffer_size=int(1e5), batch_size=64, seed=999, update_frequency=4, gamma=0.99, tau=1e-3, use_double_q=True, use_dualing_net=True):
+    def __init__(self, state_size, num_actions, lr=0.01, buffer_size=int(1e5), batch_size=64, seed=999, update_frequency=4, gamma=0.99, tau=1e-3, use_double_q=True, use_dueling_net=True):
 
         self.state_size = state_size
         self.num_actions = num_actions
@@ -24,7 +24,7 @@ class Agent():
         print("THE DEVICE IS")
         print(self.device)
 
-        if(use_dualing_net):
+        if(use_dueling_net):
 
             self.qnet_local = Dueling_DQN(state_size, num_actions).to(self.device)
             self.qnet_target = Dueling_DQN(state_size, num_actions).to(self.device)

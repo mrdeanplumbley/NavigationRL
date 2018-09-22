@@ -30,6 +30,12 @@ This means that given a state of the game s, Q(s,a) is the best (discounted) tot
 So how do we chose this action? Well one strategy may be to always pick the action with the highest likelihood of providing the maximum return. There are some problems with this however, namely in the early stages of training
 we don't know the optimal action and actions tested early for a given state may be perpetuated in later stages of training. This can be fixed however by finding a balance between exploration, where the agent tries new actions and exploitation, where the agent performs the action it believes optimal ## Vanilla DQN
 
+If we are in state s and the network choses action a and we know the Q values for all actions in the next state if action a is performed then the Q value for the state action pair would be the expected reward for performing action a plus a discounted expected return in the next state
+
+    \\begin{equation}\n,
+    Q^*(s,a) = r + \\gamma \\textrm{max}\\left( Q^*(s',a') \\right)\n,
+    \\end{equation}\n,
+
 The most basic implementation in this repo is the vanilla DQN. Finding the optimal policy is defined as the expected sum of future rewards when taking that action and following the optimal policy
 
 ![Optimal Policy](./images/optimal_policy.png)

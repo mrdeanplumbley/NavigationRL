@@ -32,10 +32,6 @@ we don't know the optimal action and actions tested early for a given state may 
 
 If we are in state s and the network choses action a and we know the Q values for all actions in the next state if action a is performed then the Q value for the state action pair would be the expected reward for performing action a plus a discounted expected return in the next state
 
-    \\begin{equation}\n,
-    Q^*(s,a) = r + \\gamma \\textrm{max}\\left( Q^*(s',a') \\right)\n,
-    \\end{equation}\n,
-
 The most basic implementation in this repo is the vanilla DQN. Finding the optimal policy is defined as the expected sum of future rewards when taking that action and following the optimal policy
 
 ![Optimal Policy](./images/optimal_policy.png)
@@ -57,6 +53,11 @@ Double Q learning attempts to fix this by decoupling the selection and evaluatio
 
 ##Dueling  DQN
 
+In dueling networks, instead of directly predicting a Q value for each action, the network splits the final layer in two, representing the value V(a) and advantage functions A(s,a) that predict a particular state value that depends on the state and action advantages A(s,a) that depend on the state and respective action.
+
+In order to combine the the value and advantage stream into Q-values Q(s,a) we do the following:
+
+![Optimal Policy](./images/dualing_formula.png)
 ## Running the models
 
 The notebook file Report.ipynb provides example code on how to run the agents.

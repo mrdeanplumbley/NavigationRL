@@ -76,7 +76,7 @@ Vanilla DQN model
 ![Vanilla](results/vanilla.png)
 
 Double DQN
-
+![Double Q](results/double_q_learning.png)
 Dueling DQN
 
 Dueling Double DQN

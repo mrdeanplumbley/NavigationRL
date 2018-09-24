@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7ee4a887-65c2-46a2-9b21-c5b243644570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Report.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/vanila.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/vanilla.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +91,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/vanila.png">
+        <entry file="file://$PROJECT_DIR$/results/vanilla.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -113,7 +113,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="1048">
-                <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+                <caret line="69" column="31" lean-forward="true" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
               </first_editor>
               <second_editor />
             </state>
@@ -195,6 +195,11 @@
               <item name="NavigationRL" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="NavigationRL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NavigationRL" type="462c0819:PsiDirectoryNode" />
+              <item name="results" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -209,8 +214,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dean\Documents\NavigationRL\images" />
       <recent name="C:\Users\Dean\Documents\NavigationRL\results" />
+      <recent name="C:\Users\Dean\Documents\NavigationRL\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -335,14 +340,14 @@
     <entry file="file://$PROJECT_DIR$/images/optimal_policy.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/vanila.png">
+    <entry file="file://$PROJECT_DIR$/results/vanilla.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1048">
-            <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+            <caret line="69" column="31" lean-forward="true" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
           </first_editor>
           <second_editor />
         </state>

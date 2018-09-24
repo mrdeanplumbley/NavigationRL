@@ -67,7 +67,7 @@ The notebook file Report.ipynb provides example code on how to run the agents.
 Below are the graphs for the three methods tried in this project.
 
 Vanilla DQN model
-![Vanilla](./images/vanilla.png)
+![Vanilla](results/vanilla.png)
 
 ## References
 

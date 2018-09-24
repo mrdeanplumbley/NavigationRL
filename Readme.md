@@ -26,7 +26,7 @@ Project dependencies are listed in the requirements.txt file.
 Please also follow the instructions to install the unity ml environment
 https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md
 
-## Q-Learning
+### Q-Learning
 An agent in Q learning works by observing the state (some numerical representation of its current environment) and makes a decision on an action to take in order to maximise its reward. How does it achieve this?
 
 We define the optimal action-value function  as the maximum expected return achievable by following any strategy, after seeing some state s and then taking some action a [1]
@@ -52,23 +52,23 @@ We also use fixed Q targets when updating the parameters in the model using a te
 
 w prime is a copy of the local network weights called the 'target network' in the code.
 
-##Double DQN
+### Double DQN
 
 It has previously been noted that the Q-learning algorithm can overestimate action values under certain conditions [2]. The max operator in vanilla Q-learning uses the same parameters both to select and evaluate actions. 
 Double Q learning attempts to fix this by decoupling the selection and evaluation with two separate networks, local and target which are periodically synced.
 
-##Dueling  DQN
+### Dueling  DQN
 
 In dueling networks, instead of directly predicting a Q value for each action, the network splits the final layer in two, representing the value V(a) and advantage functions A(s,a) that predict a particular state value that depends on the state and action advantages A(s,a) that depend on the state and respective action.
 
 In order to combine the the value and advantage stream into Q-values Q(s,a) we do the following:
 
 ![Optimal Policy](./images/dualing_formula.png)
-## Running the models
+### Running the models
 
 The notebook file Report.ipynb provides example code on how to run the agents.
 
-## Results
+### Results
 
 Below are the graphs for the three methods tried in this project.
 
@@ -77,6 +77,9 @@ Below are the graphs for the three methods tried in this project.
 
 ![Double Q](results/double_q_learning.png)
 
+### Future Work
+
+Future work for this project could include testing some different model types including actor critic models. Alternatively some synchronous training methods could be attempted to improve training by deploying many agents and periodically storing and redeploying the best agent. Some of the models tested here appear to suffer from some instability, which may be an issue with initialisation so asynchronous methods could help with that.
 ## References
 
 [1] Playing Atari with Deep Reinforcement Learning

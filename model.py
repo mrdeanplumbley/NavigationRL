@@ -28,7 +28,7 @@ class QNet(nn.Module):
 
 
 class Dueling_DQN(nn.Module):
-    def __init__(self, state_size, num_actions, h1_size=10, h2_size=10):
+    def __init__(self, state_size, num_actions, h1_size=20, h2_size=15):
         super(Dueling_DQN, self).__init__()
         self.num_actions = num_actions
 

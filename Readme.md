@@ -72,14 +72,11 @@ The notebook file Report.ipynb provides example code on how to run the agents.
 
 Below are the graphs for the three methods tried in this project.
 
-Vanilla DQN model
 ![Vanilla](results/vanilla.png)
 
-Double DQN
-![Double Q](results/double_q_learning.png)
-Dueling DQN
 
-Dueling Double DQN
+![Double Q](results/double_q_learning.png)
+
 ## References
 
 [1] Playing Atari with Deep Reinforcement Learning

@@ -20,6 +20,12 @@ In order to solve the environment, your agent must get an average score of +13 o
 
 The state space has 37 dimensions and contains information about the agents proximity to the objects around it, along with its velocity.
 
+### Project dependencies
+
+Project dependencies are listed in the requirements.txt file.
+Please also follow the instructions to install the unity ml environment
+https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md
+
 ## Q-Learning
 An agent in Q learning works by observing the state (some numerical representation of its current environment) and makes a decision on an action to take in order to maximise its reward. How does it achieve this?
 

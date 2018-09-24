@@ -75,6 +75,11 @@ Below are the graphs for the three methods tried in this project.
 Vanilla DQN model
 ![Vanilla](results/vanilla.png)
 
+Double DQN
+
+Dueling DQN
+
+Dueling Double DQN
 ## References
 
 [1] Playing Atari with Deep Reinforcement Learning

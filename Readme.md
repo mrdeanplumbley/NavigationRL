@@ -62,6 +62,13 @@ In order to combine the the value and advantage stream into Q-values Q(s,a) we d
 
 The notebook file Report.ipynb provides example code on how to run the agents.
 
+## Results
+
+Below are the graphs for the three methods tried in this project.
+
+Vanilla DQN model
+![Vanilla](./images/vanilla.png)
+
 ## References
 
 [1] Playing Atari with Deep Reinforcement Learning

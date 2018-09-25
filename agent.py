@@ -7,7 +7,7 @@ import random
 import numpy as np
 class Agent():
 
-    def __init__(self, state_size, num_actions, lr=0.01, buffer_size=int(1e5), batch_size=64, seed=999, update_frequency=4, gamma=0.99, tau=1e-3, use_double_q=True, use_dueling_net=True):
+    def __init__(self, state_size, num_actions, lr=0.001, buffer_size=int(1e5), batch_size=64, seed=999, update_frequency=4, gamma=0.99, tau=1e-3, use_double_q=True, use_dueling_net=True, testing=False, save_weights_path='./saved_models/Vanilla'):
 
         self.state_size = state_size
         self.num_actions = num_actions
@@ -21,8 +21,7 @@ class Agent():
         
         self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-        print("THE DEVICE IS")
-        print(self.device)
+        self.testing = testing
 
         if(use_dueling_net):
 
@@ -31,6 +30,10 @@ class Agent():
         else:
             self.qnet_local = QNet(state_size, num_actions).to(self.device)
             self.qnet_target = QNet(state_size, num_actions).to(self.device)
+
+        if testing:
+            self.qnet_local.load_state_dict(torch.load(save_weights_path))
+            self.qnet_target.load_state_dict(torch.load(save_weights_path))
 
         print(self.qnet_local)
 
@@ -58,7 +61,7 @@ class Agent():
         self.qnet_local.train()
 
         # Epsilon-greedy action selection
-        if random.random() > eps:
+        if random.random() > eps or self.testing:
             return np.argmax(action_values.cpu().data.numpy())
         else:
             return random.choice(np.arange(self.num_actions))

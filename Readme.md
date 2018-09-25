@@ -72,13 +72,23 @@ The notebook file Report.ipynb provides example code on how to run the agents.
 
 Below are the graphs for the three methods tried in this project.
 
+#### Vanilla DQN
+Environment solved in 447 episodes.	Average Score: 13.01
+
 ![Vanilla](results/vanilla.png)
 
+#### Double Q Learning
+Environment solved in 448 episodes.	Average Score: 13.01
 
 ![Double Q](results/double_q_learning.png)
 
+#### Dueling DQN
+Environment solved in 427 episodes.	Average Score: 13.01
+
 ![Dueling](results/dueling.png)
 
+#### Dueling Double DQN
+Environment solved in 496 episodes.	Average Score: 13.00
 ![Double Dueling](results/double_dueling.png)
 ### Future Work
 

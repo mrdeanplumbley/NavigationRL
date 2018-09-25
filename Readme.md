@@ -79,6 +79,7 @@ Below are the graphs for the three methods tried in this project.
 
 ![Dueling](results/dueling.png)
 
+![Double Dueling](results/double_dueling.png)
 ### Future Work
 
 Future work for this project could include testing some different model types including actor critic models. Alternatively some synchronous training methods could be attempted to improve training by deploying many agents and periodically storing and redeploying the best agent. Some of the models tested here appear to suffer from some instability, which may be an issue with initialisation so asynchronous methods could help with that.

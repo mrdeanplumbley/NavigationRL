@@ -7,7 +7,8 @@
     <list default="true" id="7ee4a887-65c2-46a2-9b21-c5b243644570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Report.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_models/Dueling_DQN" beforeDir="false" afterPath="$PROJECT_DIR$/saved_models/Dueling_DQN" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/results_graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Dueling_Double_DQN" beforeDir="false" afterPath="$PROJECT_DIR$/saved_models/Dueling_Double_DQN" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,14 +48,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="4890" />
+          <entry key="md" value="4919" />
           <entry key="py" value="952" />
           <entry key="txt" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="4890" />
+          <entry key="Markdown" value="4919" />
           <entry key="PLAIN_TEXT" value="24" />
           <entry key="Python" value="952" />
         </counts>
@@ -125,8 +126,8 @@
         <entry file="file://$PROJECT_DIR$/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1014">
-                <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+              <first_editor relative-caret-position="963">
+                <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
               </first_editor>
               <second_editor />
             </state>
@@ -353,8 +354,8 @@
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1014">
-            <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+          <first_editor relative-caret-position="963">
+            <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
           </first_editor>
           <second_editor />
         </state>
